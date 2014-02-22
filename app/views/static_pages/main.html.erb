@@ -1,2 +1,145 @@
-<h1>StaticPages#main</h1>
-<p>Find me in app/views/static_pages/main.html.erb</p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    </head>
+<style>
+
+    .node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}
+
+#chart {
+    width: 67%;
+    margin: 0 auto;
+}
+
+#control {
+    margin-left:auto;
+    margin-right:auto;
+    height: 50px;
+    width: 300px;
+
+}
+
+#row{
+    margin-bottom: 5px;
+}
+
+</style>
+    <body>
+    <div id="body">
+         <h3 class="text-center" id="heading">
+            <span style="font-weight: normal;">Visualizing words in Congress</span>
+        </h3>
+        <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  
+  	<div class="row-fluid">
+  		<div class="span3 offset2">
+  			<label class="control-label">
+            	Year:
+            </label>
+            	<div class="controls">
+                	<select id="year">
+	                    <option value="2001">
+	                    2001
+	                    </option>
+	                    <option value="2002">
+	                    2002
+	                    </option>
+	                    <option value="2003">
+	                    2003
+	                    </option>
+	                    <option value="2004">
+	                    2004
+	                    </option>
+	                    <option value="2005">
+	                    2005
+	                    </option>
+	                    <option value="2006">
+	                    2006
+	                    </option>
+	                    <option value="2007">
+	                    2007
+	                    </option>
+	                    <option value="2008">
+	                    2008
+	                    </option>
+	                    <option value="2009">
+	                    2009
+	                    </option>
+	                    <option value="2010" selected="selected">
+	                    2010
+	                    </option>
+	                    <option value="2011">
+	                    2011
+	                    </option>
+	                    <option value="2012">
+	                    2012
+	                    </option>
+                	</select>
+            </div>
+
+
+  		</div>
+	
+  
+    
+	<div class="span3 offset3">
+  <label class="control-label">
+            Month:
+            </label>
+            <div class="controls">
+                <select id="month">
+                    <option value="01" selected="selected">
+                    January
+                    </option>
+                    <option value="02">
+                    February
+                    </option>
+                    <option value="03">
+                    March
+                    </option>
+                    <option value="04">
+                    April
+                    </option>
+                    <option value="05">
+                    May
+                    </option>
+                    <option value="06">
+                    June
+                    </option>
+                    <option value="07">
+                    July
+                    </option>
+                    <option value="08">
+                    August
+                    </option>
+                    <option value="09">
+                    September
+                    </option>
+                    <option value="10">
+                    October
+                    </option>
+                    <option value="11">
+                    November
+                    </option>
+                    <option value="12">
+                    December
+                    </option>
+                </select>
+            </div>
+		</div>
+	</div>
+
+    <div id="chart"></div>
+    </div>
+   <script src="{% get_static_prefix %}assets/javascript/jquery.js"></script>
+        <script src="{% get_static_prefix %}assets/javascript/home.js"></script>
+    </body>
+</html>
