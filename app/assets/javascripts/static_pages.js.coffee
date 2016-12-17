@@ -1,4 +1,6 @@
 get_data = ->
+  # return for now until API is migrated
+  return
   year = $("#year").val()
   month = $("#month").val()
   entity_val = year + month
